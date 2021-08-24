@@ -44,9 +44,9 @@ def predict():
                                      touch_screen, wifi, price_range]])
         output = int(prediction)
         if output == 0:
-            return render_template('index.html', prediction_text="PHONE IS NOT 4G [{}]".format(output))
+            return render_template('index.html', prediction_text="PHONE IS NOT 4G".format(output))
         elif output == 1:
-            return render_template('index.html', prediction_text="PHONE IS 4G  [{}]".format(output))
+            return render_template('index.html', prediction_text="PHONE IS 4G".format(output))
     else:
         return render_template('index.html')
 
